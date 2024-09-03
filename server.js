@@ -44,6 +44,9 @@ app.post('/query-tunings', async (req, res) => {
     }
   });  
 
-// Start the server
+// Start the server and listen on all interfaces (0.0.0.0) and port 3000
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const HOST = '0.0.0.0';  // Listen on all network interfaces
+app.listen(PORT, HOST, () => {
+  console.log(`Server running on http://${HOST}:${PORT}`);
+});
