@@ -11,7 +11,7 @@ const pool = new Pool({
   user: 'root',
   host: '0.0.0.0',
   database: 'bookly',
-  port: 26000, // port for HAProxy
+  port: 26257, 
   ssl: false // Disable SSL
 });
 
