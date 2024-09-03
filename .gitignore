@@ -1,0 +1,46 @@
+# Node modules directory
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for local environment variables
+.env
+
+# MacOS-specific files
+.DS_Store
+
+# Specific to editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Output directories
+public/js/app.js.map
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Environment-specific files
+.env.local
+.env.*.local
+
+# Other local files
+public/css/styles.css.map
