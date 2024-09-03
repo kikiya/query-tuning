@@ -9,9 +9,9 @@ app.use(express.json());
 // Set up PostgreSQL connection pool with SSL disabled
 const pool = new Pool({
   user: 'root',
-  host: 'localhost',
-  database: 'query_tuning',
-  port: 26257, // default port for CockroachDB
+  host: '0.0.0.0',
+  database: 'bookly',
+  port: 26000, // port for HAProxy
   ssl: false // Disable SSL
 });
 
