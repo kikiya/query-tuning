@@ -6,6 +6,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Set up PostgreSQL connection pool with SSL disabled
 const pool = new Pool({
   user: 'root',
