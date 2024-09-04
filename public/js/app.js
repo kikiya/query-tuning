@@ -1,6 +1,6 @@
 $(document).ready(function() {
     const fetchTunings = () => {
-        $.get('http://0.0.0.0:3000/query-tunings', (data) => {
+        $.get('/query-tunings', (data) => {  // Use relative URL
             const tableBody = $('#tuning-table-body');
             tableBody.empty();
             data.forEach((row, index) => {
@@ -27,9 +27,9 @@ $(document).ready(function() {
 
         // Ensure AJAX POST sends JSON data
         $.ajax({
-            url: 'http://0.0.0.0:3000/query-tunings',
+            url: '/query-tunings',  // Use relative URL
             type: 'POST',
-            contentType: 'application/json', // Specify the content type
+            contentType: 'application/json',
             data: JSON.stringify({ 
                 query: query, 
                 execution_time: parseFloat(executionTime), 
